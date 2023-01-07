@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Classificação"
+        android:icon="@drawable/classi"
+        android:id="@+id/classificacao"/>
+
+    <item android:title="Equipes"
+        android:icon="@drawable/equipes"
+        android:id="@+id/equipes"/>
+
+    <item android:title="Jogos"
+        android:id="@+id/jogos"
+        android:icon="@drawable/jogos"/>
+</menu>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:id="@+id/img"
+            android:scaleType="centerCrop"
+            android:background="@drawable/img"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Instituição:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/tvfirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kauan"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/tvCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvestado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sao Paulo-SP"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Endereço:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/tvIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horário:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvaltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.00"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvpeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.00"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="984191811"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kvictor127@gmail.com"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrato:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvdispo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disponível"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalidade:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvmodalidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sao Paulo-SP"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posição:"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvposicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meia"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000">
+            </TextView>
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menor de 18 anos comparecer com o responsável."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comparecer com RG e CPF."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

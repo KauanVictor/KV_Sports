@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177252749506",
+    "project_id": "world-sports-3e807",
+    "storage_bucket": "world-sports-3e807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177252749506:android:e45622a79daf39a2646b5b",
+        "android_client_info": {
+          "package_name": "com.example.varzea_organizada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177252749506-ccdbrju2fs3mv1geha5dt380fnci5u0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZEQLOPbwUV7jxkhHsK7u9uVQrkBy9LuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177252749506-ccdbrju2fs3mv1geha5dt380fnci5u0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

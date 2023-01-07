@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    tools:context=".cadastro_comissao">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <TextView
+            android:layout_marginBottom="15sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de eventos"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:id="@+id/cadastrar"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:textAlignment="gravity"
+            android:layout_width="270sp"
+            android:layout_height="70sp">
+
+
+            <EditText
+                android:id="@+id/nomeAtleta"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:inputType="textCapWords|textCapSentences"
+                android:layout_height="40sp"
+                android:hint="Instituição"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Responsavel"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+            <com.santalu.maskedittext.MaskEditText
+                app:met_mask="+55(##) ##### ####"
+                android:id="@+id/telefoneAtleta"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Telefone para contato"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Altura"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/alturaAtleta"
+                android:paddingLeft="10dp"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                app:met_mask="##:##"
+                android:hint="Horário"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Peso"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/pesoAtleta"
+                android:paddingLeft="10dp"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                app:met_mask="##/##/####"
+                android:hint="Data"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Idade"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/idadeAtleta"
+                android:paddingLeft="10dp"
+                android:inputType="textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Endereço"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idade"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+            <EditText
+                android:id="@+id/emailAtleta"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/TILsenha"
+         android:layout_gravity="center_horizontal"
+         android:focusable="true"
+         app:passwordToggleEnabled="true"
+         android:textColorHint="#4CAF50"
+         android:layout_width="270sp"
+         android:textAlignment="gravity"
+         android:layout_height="70sp">
+
+     <EditText
+             android:id="@+id/SenhaEquipe"
+             android:paddingLeft="10dp"
+             android:password="true"
+             android:layout_width="match_parent"
+             android:layout_height="40sp"
+             android:hint="Crie a senha de acesso"
+             android:textSize="20sp"
+             android:gravity="left|center"
+             android:background="@drawable/person"
+             android:singleLine="true"
+             android:textColor="#000000" />
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responsável"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+-->
+
+
+
+
+
+
+       <!-- <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Localização"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"/>
+
+
+        <EditText
+            android:focusable="false"
+            android:background="@drawable/person"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="270dp"
+            android:layout_height="40sp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:hint="Informe o estado."
+            android:id="@+id/estado"/>
+
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="20sp"/>
+
+        <EditText
+            android:focusable="false"
+            android:background="@drawable/person"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="270dp"
+            android:layout_height="40sp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:hint="Informe a zona que reside."
+            android:id="@+id/cidade"/>
+
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="20sp"/>
+
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:layout_width="270dp"
+            android:layout_height="40sp"
+            android:focusable="false"
+            android:background="@drawable/person"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:hint="Informe a posição que atua."
+            android:id="@+id/posicao"/>
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clique aqui para adicionar uma foto."
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/escudo"
+            />
+        <ImageView
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="65sp"
+            android:layout_width="200sp"
+            android:layout_height="120sp"
+            android:scaleType="fitEnd"
+            android:layout_gravity="center"
+            android:id="@+id/foto">
+        </ImageView>
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login e senha"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:textAlignment="gravity"
+            android:layout_width="270sp"
+            android:layout_height="70sp">
+
+
+            <EditText
+                android:id="@+id/login"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:inputType="textCapWords|textCapSentences"
+                android:layout_height="40sp"
+                android:hint="Login"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+ -->
+       <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#000"
+            android:textAlignment="gravity"
+            android:layout_width="270sp"
+            android:layout_height="70sp">
+
+
+            <EditText
+                android:id="@+id/senhaAtleta"
+                android:password="true"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                android:hint="Senha"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:singleLine="true"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:layout_width="277dp"
+            android:textColor="#000"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:id="@+id/estado">
+
+        </Spinner>
+
+
+        <Spinner
+            android:layout_width="277dp"
+            android:textColor="#000"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:id="@+id/modalidade"/>
+
+        <Spinner
+            android:layout_width="277dp"
+            android:textColor="#000"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10sp"
+            android:gravity="left|center"
+            android:id="@+id/categoria"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/posicao"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:textColorHint="#000"
+            android:layout_width="270sp"
+            android:textAlignment="gravity"
+            android:layout_height="70sp">
+
+            <EditText
+                android:id="@+id/posicaoAtleta"
+                android:inputType="textCapWords|textCapSentences"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:hint="Posição"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:background="@drawable/person"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--  <RelativeLayout
+              android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center">
+
+
+          <Spinner
+              android:entries="@array/posicao"
+              android:layout_width="277dp"
+              android:textColor="#000"
+              android:layout_marginHorizontal="40dp"
+              android:layout_height="50sp"
+              android:textSize="15sp"
+              android:visibility="invisible"
+              android:layout_gravity="center_horizontal"
+              android:paddingLeft="10sp"
+              android:gravity="left|center"
+              android:id="@+id/posicao"/>
+
+              <Spinner
+                  android:entries="@array/basquete"
+                  android:layout_width="277dp"
+                  android:textColor="#000"
+                  android:layout_marginHorizontal="40dp"
+                  android:layout_height="50sp"
+                  android:textSize="15sp"
+                  android:visibility="invisible"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingLeft="10sp"
+                  android:gravity="left|center"
+                  android:id="@+id/posicaobasquete"/>
+
+
+              <Spinner
+                  android:entries="@array/volei"
+                  android:layout_width="277dp"
+                  android:textColor="#000"
+                  android:layout_marginHorizontal="40dp"
+                  android:layout_height="50sp"
+                  android:textSize="15sp"
+                  android:visibility="invisible"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingLeft="10sp"
+                  android:gravity="left|center"
+                  android:id="@+id/posicaovolei"/>
+
+
+              <Spinner
+                  android:entries="@array/futsal"
+                  android:layout_width="277dp"
+                  android:textColor="#000"
+                  android:layout_marginHorizontal="40dp"
+                  android:layout_height="50sp"
+                  android:textSize="15sp"
+                  android:visibility="invisible"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingLeft="10sp"
+                  android:gravity="left|center"
+                  android:id="@+id/posicaofutsal"/>
+
+
+              <Spinner
+                  android:entries="@array/handebol"
+                  android:layout_width="277dp"
+                  android:textColor="#000"
+                  android:layout_marginHorizontal="40dp"
+                  android:layout_height="50sp"
+                  android:textSize="15sp"
+                  android:visibility="invisible"
+                  android:layout_gravity="center_horizontal"
+                  android:paddingLeft="10sp"
+                  android:gravity="left|center"
+                  android:id="@+id/posicaohandebol"/>
+          </RelativeLayout>
+
+
+          <RadioGroup
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/radioGroupDispo">
+
+          <RadioButton
+              android:checked="true"
+              android:id="@+id/checkDispon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14sp"
+              android:text="Disponível para assinar."
+              />
+
+
+              <RadioButton
+                  android:id="@+id/checkIndis"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:text="Indisponível para assinar."
+                  />
+
+          </RadioGroup>
+  -->
+
+
+        <!--
+            <CheckBox
+            android:id="@+id/checkDispon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Possuo disponibilidade para assinar com equipes."
+            />
+
+          <TextView
+              android:layout_marginBottom="15sp"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Cadastro"
+              android:textColor="@color/colorPrimary"
+              android:textSize="23sp"
+              android:textStyle="bold"
+              android:id="@+id/text"/>
+              -->
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:id="@+id/img"
+            android:scaleType="centerCrop"
+            android:background="@drawable/img"
+            />
+
+
+    <TextView
+        android:layout_marginBottom="15sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:id="@+id/registrar"/>
+      <!--  <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrain"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#fff"
+                android:elevation="35dp"
+                android:src="@drawable/fb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/fab_insta"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.278" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#fff"
+                android:elevation="35dp"
+                android:src="@drawable/sitezin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.204"
+                app:layout_constraintStart_toEndOf="@id/fab_insta"
+                app:layout_constraintVertical_bias="0.269" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#fff"
+                android:elevation="35dp"
+                android:src="@drawable/insta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.278" />
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/classificacao">
+
+    <fragment
+        android:id="@+id/classificacao"
+        android:name="com.example.varzea_organizada.classificacao"
+        android:label="fragment_classificacao"
+        tools:layout="@layout/fragment_classificacao" />
+    <fragment
+        android:id="@+id/equipes"
+        android:name="com.example.varzea_organizada.equipes"
+        android:label="fragment_equipes"
+        tools:layout="@layout/fragment_equipes" />
+    <fragment
+        android:id="@+id/jogos"
+        android:name="com.example.varzea_organizada.jogos"
+        android:label="fragment_jogos"
+        tools:layout="@layout/fragment_jogos" />
+</navigation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".cadastro_comissao">
+
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="15sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:id="@+id/entrar"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:textColorHint="#000"
+        android:textAlignment="center"
+        android:layout_width="300sp"
+        android:layout_height="70sp">
+
+            <EditText
+                android:windowSoftInputMode="adjustResize"
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Email"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/person"
+                />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#000"
+        android:textAlignment="gravity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+    <EditText
+        android:windowSoftInputMode="adjustResize"
+        android:id="@+id/senha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/person"
+        android:hint="Senha"
+        android:password="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        app:layout_constraintWidth_percent=".8" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+<Space
+    android:layout_width="0dp"
+    android:layout_height="10dp"/>
+    <TextView
+        android:id="@+id/recuperarSenha"
+        android:layout_width="250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:text="Esqueci a minha senha."
+        android:textSize="18dp"
+       />
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:windowSoftInputMode="adjustResize"
+        android:id="@+id/validaLogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="Entrar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+
+
+</LinearLayout>
